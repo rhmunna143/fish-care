@@ -180,6 +180,18 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
 }
 
+/* Dark mode video section */
+[data-theme="dark"] .video-card {
+  background-color: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Dark mode testimonials with images */
+[data-theme="dark"] .testimonial-card.with-image {
+  background-color: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
 /* Smooth transition for theme toggle */
 body,
 .header,

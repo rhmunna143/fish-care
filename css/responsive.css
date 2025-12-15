@@ -136,6 +136,27 @@
     font-size: 36px;
   }
 
+  /* Video Section */
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .testimonial-card.with-image {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .testimonial-image {
+    margin: 0 auto;
+  }
+
   /* Footer */
   .footer-grid {
     grid-template-columns: 1fr;
