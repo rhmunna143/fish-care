@@ -197,6 +197,49 @@
   background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
 }
 
+/* Dark mode contact page */
+[data-theme="dark"] .contact-info-card {
+  background-color: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .contact-info-icon {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+}
+
+[data-theme="dark"] .contact-form-content {
+  background-color: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .contact-sidebar-card {
+  background-color: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .faq-item {
+  background-color: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .form-control {
+  background-color: var(--bg-primary);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .form-control:focus {
+  border-color: var(--color-primary);
+}
+
+[data-theme="dark"] .business-hours li {
+  background-color: var(--bg-primary);
+}
+
+[data-theme="dark"] .social-links-large .social-link {
+  background-color: var(--bg-primary);
+}
+
 /* Smooth transition for theme toggle */
 body,
 .header,
