@@ -574,7 +574,11 @@ p {
 
 /* ========== Products Grid ========== */
 .products-section {
-  padding-bottom: var(--space-2xl);
+  padding: var(--space-4xl) 0 var(--space-4xl) 0;
+}
+
+.why-choose-section {
+  padding: var(--space-xl) 0 var(--space-4xl) 0;
 }
 
 .mt-4 {
@@ -894,7 +898,11 @@ p {
 .mission-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -942,7 +950,7 @@ p {
 }
 
 /* ========== Core Values Section ========== */
-.values-section{
+.values-section {
   padding: var(--space-xl) 0 var(--space-4xl) 0;
 }
 
@@ -970,7 +978,11 @@ p {
 .value-icon {
   width: 70px;
   height: 70px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -999,7 +1011,7 @@ p {
 }
 
 /* ========== Team Section ========== */
-.team-section{
+.team-section {
   padding: var(--space-xl) 0 var(--space-4xl) 0;
 }
 
@@ -1450,6 +1462,10 @@ p {
 }
 
 /* ========== Gallery Grid ========== */
+.filter-section {
+  padding: var(--space-md) 0;
+}
+
 .gallery-filters {
   display: flex;
   justify-content: center;
@@ -1608,7 +1624,11 @@ p {
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(180deg, var(--color-primary-light), var(--color-primary));
+  background: linear-gradient(
+    180deg,
+    var(--color-primary-light),
+    var(--color-primary)
+  );
   transform: translateX(-50%);
 }
 
@@ -1637,7 +1657,11 @@ p {
   top: 0;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
   border: 4px solid var(--bg-light);
   border-radius: 50%;
   transform: translateX(-50%);
