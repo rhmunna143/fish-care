@@ -192,6 +192,11 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
+/* Dark mode concern icons */
+[data-theme="dark"] .concern-icon {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+}
+
 /* Smooth transition for theme toggle */
 body,
 .header,

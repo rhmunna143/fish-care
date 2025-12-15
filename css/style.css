@@ -591,6 +591,25 @@ p {
   gap: var(--space-xl);
 }
 
+/* ========== Concern Icon ========== */
+.concern-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-lg);
+  font-size: 36px;
+  color: var(--color-white);
+  transition: all var(--transition-base);
+}
+
+.card:hover .concern-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
 .product-card {
   background-color: var(--bg-primary);
   border-radius: var(--radius-lg);
