@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found - Allied Fish Care Ltd.">
+    <title>404 - Page Not Found | Allied Fish Care Ltd.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--spacing-xl);
+            background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
+            color: var(--color-white);
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 700;
+            line-height: 1;
+            margin-bottom: var(--spacing-md);
+        }
+        .error-title {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-md);
+        }
+        .error-text {
+            font-size: 1.125rem;
+            margin-bottom: var(--spacing-xl);
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body class="lang-en">
+    <div class="error-page">
+        <div class="error-code">404</div>
+        <h1 class="error-title" lang="en">Page Not Found</h1>
+        <h1 class="error-title" lang="bn" style="display: none;">পৃষ্ঠা পাওয়া যায়নি</h1>
+        <p class="error-text" lang="en">The page you are looking for doesn't exist or has been moved.</p>
+        <p class="error-text" lang="bn" style="display: none;">আপনি যে পৃষ্ঠাটি খুঁজছেন তা বিদ্যমান নেই বা সরানো হয়েছে।</p>
+        <div>
+            <a href="index.html" class="btn btn-primary btn-lg" style="background: white; color: var(--color-primary);">
+                <i class="fas fa-home"></i>
+                <span lang="en">Back to Home</span>
+                <span lang="bn" style="display: none;">হোমে ফিরে যান</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="./js/dark-mode.js"></script>
+    <script src="./js/language.js"></script>
+</body>
+</html>
