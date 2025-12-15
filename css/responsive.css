@@ -83,6 +83,45 @@
     gap: var(--space-md);
   }
 
+  /* Mission Vision */
+  .mission-vision-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  /* Core Values */
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  /* Team */
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+
+  /* Timeline */
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    padding-left: 80px !important;
+    padding-right: 0 !important;
+  }
+
+  .timeline-icon {
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .timeline-content::before {
+    display: none;
+  }
+
   /* Cards */
   .card {
     padding: var(--space-md);
@@ -98,9 +137,14 @@
   }
 
   /* Footer */
-  .footer-main {
+  .footer-grid {
     grid-template-columns: 1fr;
-    gap: var(--space-xl);
+    gap: var(--space-2xl);
+  }
+
+  .footer-bottom-content {
+    flex-direction: column;
+    text-align: center;
   }
 
   /* Spacing */
@@ -118,6 +162,15 @@
   /* Grid layouts */
   .grid-3,
   .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* About page sections - 2 columns on tablet */
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -149,9 +202,9 @@
   }
 
   /* Footer */
-  .footer-main {
+  .footer-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-xl);
+    gap: var(--space-2xl);
   }
 }
 
