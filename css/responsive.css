@@ -165,7 +165,27 @@
 
   .footer-bottom-content {
     flex-direction: column;
+    gap: var(--space-md);
     text-align: center;
+  }
+
+  .footer-bottom-links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-text {
+    font-size: var(--font-size-body-small);
+  }
+
+  .footer-links a,
+  .footer-contact li {
+    font-size: var(--font-size-body-small);
   }
 
   /* Contact Page */
@@ -272,6 +292,12 @@
   .grid-4 {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* Footer - 4 columns on laptop and up */
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: var(--space-3xl);
+  }
 }
 
 /* ========== Desktop (1440px+) ========== */
@@ -286,6 +312,12 @@
 
   .section {
     padding: calc(var(--space-4xl) * 1.2) 0;
+  }
+
+  /* Footer - 4 columns on desktop */
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: var(--space-3xl);
   }
 }
 
