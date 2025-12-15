@@ -40,12 +40,29 @@
     padding: var(--space-md) 0;
   }
 
-  .nav-menu {
+  .logo-text {
+    font-size: var(--font-size-body-large);
+  }
+
+  .nav {
     display: none;
+  }
+
+  .nav-menu {
+    display: none !important;
   }
 
   .mobile-menu-toggle {
     display: block !important;
+  }
+
+  .header-actions {
+    gap: var(--space-sm);
+  }
+
+  .lang-toggle {
+    padding: var(--space-sm);
+    font-size: 12px;
   }
 
   /* Hero */
@@ -104,13 +121,21 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /* Header */
-  .header-nav {
-    gap: var(--space-md);
+  /* Header - Use hamburger menu on tablet */
+  .nav {
+    display: none;
   }
 
-  .nav-link {
-    font-size: var(--font-size-body-small);
+  .nav-menu {
+    display: none !important;
+  }
+
+  .mobile-menu-toggle {
+    display: block !important;
+  }
+
+  .header-actions {
+    gap: var(--space-sm);
   }
 
   /* Hero */

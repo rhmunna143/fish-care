@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initCounters();
   initScrollAnimations();
   initSmoothScroll();
+  initSlickSlider();
 });
 
 /**
@@ -400,4 +401,36 @@ if (document.querySelector('img[data-src]')) {
 const yearElement = document.querySelector('.current-year');
 if (yearElement) {
   yearElement.textContent = new Date().getFullYear();
+}
+
+/**
+ * Slick Slider for Testimonials
+ */
+function initSlickSlider() {
+  if (typeof jQuery !== 'undefined' && jQuery.fn.slick) {
+    $('.testimonials-slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      arrows: true,
+      pauseOnHover: true,
+      pauseOnFocus: true,
+      adaptiveHeight: true,
+      prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>',
+      nextArrow: '<button class="slick-next slick-arrow" aria-label="Next"><i class="fas fa-chevron-right"></i></button>',
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            dots: true
+          }
+        }
+      ]
+    });
+  }
 }

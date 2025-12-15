@@ -29,6 +29,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Slick Slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    
     <!-- Stylesheets -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -83,14 +86,16 @@
             </button>
         </div>
         <nav class="mobile-nav">
-            <a href="index.html" class="nav-link active">Home</a>
-            <a href="about.html" class="nav-link">About</a>
-            <a href="products.html" class="nav-link">Products</a>
-            <a href="gallery.html" class="nav-link">Gallery</a>
-            <a href="concerns.html" class="nav-link">Our Concerns</a>
-            <a href="blog.html" class="nav-link">Blog</a>
-            <a href="careers.html" class="nav-link">Careers</a>
-            <a href="contact.html" class="nav-link">Contact</a>
+            <ul class="mobile-nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="products.html" class="nav-link">Products</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="concerns.html" class="nav-link">Our Concerns</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="careers.html" class="nav-link">Careers</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
         </nav>
     </div>
     <div class="mobile-overlay"></div>
@@ -270,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="text-center" style="margin-top: var(--spacing-xl);">
+                <div class="text-center mt-4">
                     <a href="products.html" class="btn btn-primary btn-lg">
                         <span lang="en">View All Products</span>
                         <span lang="bn" style="display: none;">সমস্ত পণ্য দেখুন</span>
@@ -332,7 +337,7 @@
                     <p class="section-subtitle" lang="bn" style="display: none;">আমরা যে মাছ চাষীদের সমর্থন করেছি তাদের সাফল্যের গল্প</p>
                 </div>
 
-                <div class="testimonials-grid">
+                <div class="testimonials-slider">
                     <div class="testimonial-card">
                         <div class="testimonial-rating">
                             <i class="fas fa-star"></i>
@@ -504,6 +509,8 @@
     </button>
 
     <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./js/dark-mode.js"></script>
     <script src="./js/language.js"></script>
     <script src="./js/main.js"></script>

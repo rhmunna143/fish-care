@@ -151,6 +151,25 @@
   color: var(--color-white);
 }
 
+/* Dark mode testimonial slider */
+[data-theme="dark"] .testimonial-card {
+  background-color: var(--bg-secondary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] .testimonials-slider .slick-arrow {
+  background-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+[data-theme="dark"] .testimonials-slider .slick-arrow:hover {
+  background-color: var(--color-primary-light);
+}
+
+[data-theme="dark"] .testimonials-slider .slick-dots li button {
+  background-color: var(--color-primary-light);
+}
+
 /* Smooth transition for theme toggle */
 body,
 .header,
